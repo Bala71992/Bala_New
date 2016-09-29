@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AutOlympics</title>
+<style>
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+</style>
+   
+</head>
+<body background="http://4.bp.blogspot.com/-hae1oTWRwvs/Uh90QNPSHSI/AAAAAAAAFoQ/USCM9fcoOCc/s1600/Background-Picture-Html2.jpg">
+<script>
+                function goToNewPage() {
+                    if(document.getElementById('target').value){
+                        window.location.href = document.getElementById('target').value;
+                    }
+                }
+                </script>
+<h1 style="color:blue;">AutOlympics</h1>
+<h1 style="color:blue;">Image Comparison</h1>
+<center><img src="http://www.techgig.com/Themes/Release/images/tg3_images/xtrophy.png.pagespeed.ic.C7NMsV8Z_N.png" alt="Autolympics" style="width: 576px;height:228px;"></center><br>
+<br>
+<h4>Image Comparison project will provide the differences between the images, their percentage & Highlighting differences</h4>
+
+<p>This project provides the below solution
+<br>
+<br>
+1. Comparing 2 live images
+<br>
+2. comparing a live image with a screenshot
+<br>
+3. Resizing of the image without spoiling the resolution
+<br>
+4. Saving the images<br></p>
+
+<h4>Type of options available for Image Comparison</h4>
+ <form name="dropdown">
+                    <select name="selected" id="target" accesskey="E">
+                    <option selected>Select...</option>
+                    <option value="D:\Userfiles\asatheesh\workspace\Image Comparision\src\com\amadeus\selenium\page\html\Image Resize.html">Image Resize</option>
+                    <option value="D:\Userfiles\asatheesh\workspace\Image Comparision\src\com\amadeus\selenium\page\html\ICWL.html">Image comparison present in folders</option>
+                   <option value="D:\Userfiles\asatheesh\workspace\Image Comparision\src\com\amadeus\selenium\page\html\ICWS.html">Image compariosn with screenshot</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="button" name="button" value="submit" onclick="goToNewPage(document.dropdown.selected)">
+                    <input type="reset"   value="Reset">
+                </form>
+</body>
+</html>
